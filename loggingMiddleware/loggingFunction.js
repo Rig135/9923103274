@@ -1,4 +1,4 @@
-async function log(stack,level,packageName,message){
+export default async function logger(stack,level,packageName,message){
     try{
         const response = await fetch("http://4.224.186.213/evaluation-service/logs", {
             method: "POST",
